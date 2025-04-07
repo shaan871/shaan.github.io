@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+
+header {
+  background-color: rgb(127, 171, 192);
+  padding: 10px 0;
+}
+
+.menubar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+}
+
+.menubar li {
+  margin: 0 15px;
+}
+
+.menubar li a {
+  text-decoration: none;
+  color: rgb(6, 44, 104);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.menubar li a:hover,
+.menubar .active {
+  background-color: rgb(101, 126, 140);
+  color: #fff;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .menubar {
+      flex-direction: column; /* Stack menu vertically */
+      text-align: center;
+  }
+  
+  .menubar li {
+      padding: 10px 0;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
